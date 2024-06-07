@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajuda Emocional</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo ao Portal de Ajuda Emocional</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#resources">Recursos</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about">
+            <h2>Sobre</h2>
+            <p>Nosso objetivo é proporcionar um ambiente seguro e acolhedor para aqueles que buscam ajuda com transtornos emocionais.</p>
+        </section>
+        <section id="resources">
+            <h2>Recursos</h2>
+            <div class="resource-list">
+                <div class="resource">
+                    <h3>Terapia Online</h3>
+                    <p>Encontre terapeutas disponíveis para consultas online.</p>
+                    <button onclick="showMoreInfo('terapia-online')">Mais informações</button>
+                </div>
+                <div class="resource">
+                    <h3>Grupos de Apoio</h3>
+                    <p>Participe de grupos de apoio e compartilhe suas experiências.</p>
+                    <button onclick="showMoreInfo('grupos-apoio')">Mais informações</button>
+                </div>
+                <div class="resource">
+                    <h3>Artigos e Vídeos</h3>
+                    <p>Acesse uma coleção de artigos e vídeos sobre saúde emocional.</p>
+                    <button onclick="showMoreInfo('artigos-videos')">Mais informações</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Ajuda Emocional. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="modal-text"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
